@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "greenhaven",
+	"version": "${version}",
+	"name": "Green Haven",
+	"description": "A mod that currently adds a new crop, hemp!",
+	"authors": [
+		"Chochi and Jolene"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/Jolene",
+		"sources": "https://github.com/jolenesjolene/green-haven"
+	},
+	"license": "MIT",
+	"icon": "assets/greenhaven/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jolene.greenhaven.GreenHaven"
+		],
+		"fabric-datagen": [
+			"net.jolene.greenhaven.GreenHavenDataGenerator"
+		],
+		"client": [
+			"net.jolene.greenhaven.GreenHavenClient"
+		]
+	},
+	"mixins": [
+		"greenhaven.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
